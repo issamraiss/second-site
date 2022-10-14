@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex002</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+
+            
+                .div {
+                list-style-type: none;
+                display: grid;
+                justify-content: center;
+                float: left;
+                cursor: pointer;
+                
+            }
+                a {
+                padding: 5px ;
+                padding-bottom: 5px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                color: aliceblue;
+                font-size: 5px;
+
+                height: 30px;
+                width: 80px;
+            }
+                
+            
+
+            
+                
+            
+            .div {
+                list-style-type: none;
+                display: flex;
+                justify-content: center;
+                float: left;
+                cursor: pointer;
+            }
+            .div :hover{
+                background-color: rgba(160, 9, 9, 0.521);
+                border-radius: 50px;
+
+            }
+
+
+            .navbar {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: start;
+                background-color: rgb(22, 4, 15);
+                position: sticky;
+                border-radius: 50px ;
+               
+
+
+
+              
+                
+                
+            }
+            a {
+                padding: 10px ;
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                color: aliceblue;
+                font-size: 25px;
+
+                height: 30px;
+                width: 65px;
+            }
+            .home {
+                background-color: rgb(238, 40, 40);
+                text-decoration: none;
+                border-radius: 50px;
+            }
+            .up{
+                display: inline;
+              
+            }
+            .option2 {
+                display: flex;
+                right: 0%;
+                justify-content: end;
+                float: right;
+
+            }
+            .more{
+                display: flex;
+                justify-content: end;
+
+                float: right;
+            }
+
+            .up1{
+                color: black;
+             
+                background-color: aquamarine;
+                margin-top: 10px;
+                
+                padding: 20px;
+                flex: 1;
+                border-radius: 15px;
+                
+
+                
+            }
+            .ul :hover{
+                background-color: rgb(13, 233, 159);  
+
+            }
+
+            .ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            
+            }
+
+
+            .content {
+                background-color: rgb(240, 240, 240);
+
+            
+                min-width: 250px;
+                flex: 1;
+                margin-top: 10px;
+                border-radius: 15px;
+                
+            }
+            .content1 {
+                background-color: lightgreen;
+                margin-top: 10px;
+                right: 0%;
+                
+                border-radius: 15px;
+                
+                
+            }
+            .up { grid-area: list;}
+            .content { grid-area: list1;}
+            .content1 { grid-area: list2;}
+            .ha {
+                display: grid;
+                grid-template-areas:
+                'list list1 list1 list2';
+                column-gap: 10px;
+                row-gap: 10px;
+                
+            }
+            @media (max-width: 491px) {
+                .ha {
+                display: grid;
+                grid-template-areas:
+                'list list list1 list1'
+                'list2 list2 list2 list2';
+                column-gap: 10px;
+                row-gap: 10px;
+                
+            }
+        }
+            @media (max-width: 358px) {
+                a {
+                padding: 7px ;
+                padding-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                color: aliceblue;
+                font-size: 20px;
+                height: 20px;
+                width: 50px;
+            }  
+            }
+            @media (max-width: 280px) {
+                .ha {
+                display: grid;
+                grid-template-areas:
+                'list list list list'
+                'list1 list1 list1 list1'
+                'list2 list2 list2 list2';
+                column-gap: 10px;
+                row-gap: 10px;
+            }   
+            }
+
+
+
+
+
+            
+    
+            
+
+
+   
+ 
+            
+         
+        </style>
+    </head>
+    <body>
+    
+        <div class="navbar">
+
+            <div class="">
+                <div class="div"><a class="home" href="https://www.youtube.com/">Home</a></div>
+                <div class="div"><a>News</a></div>
+                <div class="div"><a>Contact</a></div>
+                <div class="div"><a>About</a></div>
+                
+            </div>
+            
+        </div>
+
+    <div class="ha">
+        <div class="up">
+            <ul class="ul">
+                <li class="up1"> first</li>
+                <li class="up1"> second</li>
+                <li class="up1"> third</li>
+                <li class="up1"> fourth</li>
+            </ul >
+        </div>
+    
+        <div class="content">
+            
+            <h1>titre1</h1>
+            <p>say any thing bbubikbkjbkbk </p>
+          
+            
+        </div>
+        <div class="content1" >
+            <h2>more info</h2>
+            <p>say more any think</p>
+
+        </div>
+    </div>
+            
+           
+
+
+ 
+
+
+
+
+    </body>
+
+
+</html>
